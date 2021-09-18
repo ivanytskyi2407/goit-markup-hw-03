@@ -1,0 +1,181 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --background-color-secondary: #2f303a;
+  --bachgroun-button-portfolio: #f5f4fa;
+}
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.14;
+
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
+}
+
+a {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+.header {
+  background-color: blue;
+}
+.container {
+  max-width: 1200px;
+   margin: 0, auto;
+   padding: 0, 15px:
+}
+
+.logo {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.logo-black {
+  color: #000000;
+}
+.logo-white {
+  color: var(--primary-white-color);
+}
+
+/* site nav */
+.site-nav-link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+.site-nav-link:hover,
+.site-nav-link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav-link.current {
+  color: var(--accent-color);
+}
+
+/* auth nav */
+.auth-nav-link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+.auth-nav-link:hover,
+.auth-nav-link:focus {
+  color: var(--accent-color);
+}
+
+/* Заказ услуг */
+.order {
+  background: var(--background-color-secondary);
+  color: var(--primary-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.order-btn {
+  background: var(--accent-color);
+
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+}
+.section-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* наше преимущество */
+
+.features .title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.description {
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+/* Чем мы занимаемся */
+
+/* Наша команда */
+.team {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.profession {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Футер */
+.footer {
+  background-color: var(--background-color-secondary);
+}
+.address {
+  font-style: inherit;
+}
+.address-a {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+}
+.contacts-a {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+}
+
+/* Portfolio */
+
+.navigation-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  color: var(--title-text-color);
+  background: var(--bachgroun-button-portfolio);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.navigation-btn:focus,
+.navigation-btn:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+.title-portfolio {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+.portfolio-services {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
