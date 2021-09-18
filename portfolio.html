@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <!-- <link
+    <link
       rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css"
-    /> -->
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.css"
+    />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,11 +20,11 @@
   </head>
   <body>
     <!--Шапка-->
-    <header>
+    <header class="header-page">
+      <div class="container">
       <a class="logo" href="./index.html"
         >Web<span class="logo-black">Studio</span></a>
-      <div class="container">
-      <nav>
+            <nav>
         <ul class="site-nav list">
          <li><a class="site-nav-link" href="./index.html">Студия</a></li>
           <li><a class="site-nav-link current" href="./portfolio.html">Портфолио</a></li>
@@ -41,7 +41,7 @@
     <main>
       <!--Навигация-->
       <section>
-        <h1 hidden>Портфоліо</h1>
+        <div class="container"><h1 hidden>Портфоліо</h1>
         <ul  class="navigation list">
           <li>
             <button class="navigation-btn"  type="button">Все</button>
@@ -137,27 +137,33 @@
             <h2 class="title-portfolio">Growing Business</h2>
             <p class="portfolio-services">Приложение</p>
           </li>
-        </ul>
+        </ul></div>
       </section>
     </main>
     <!--Футер-->
    <footer class="footer">
-      <a class="logo" href="./index.html"
-        >Web<span class="logo-white">Studio</span></a
-      >
-      <address class="address">
-        <ul class="list">
-          <li>
-            <a class="address-a" href="">г. Киев, пр-т Леси Украинки, 26</a>
-          </li>
-          <l class="contacts"i>
-            <a class="contacts-a" href="maito:info@devstudio.com">info@devstudio.com</a>
-          </li>
-          <li class="contacts">
-            <a class="contacts-a" href="tel:+380961111111">+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </address>
+      <div class="container">
+        <a class="logo" href="./index.html"
+          >Web<span class="logo-white">Studio</span></a
+        >
+        <address class="address">
+          <ul class="list">
+            <li>
+              <a class="address-a" href="">г. Киев, пр-т Леси Украинки, 26</a>
+            </li>
+            <li class="contacts">
+              <a class="contacts-a" href="maito:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contacts">
+              <a class="contacts-a" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
