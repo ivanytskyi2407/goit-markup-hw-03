@@ -14,22 +14,39 @@ body {
   color: var(--primary-text-color);
   background-color: var(--primary-white-color);
 }
+h1,
+h2,
+h3,
+h4,
+ul,
+li,
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 
 a {
   text-decoration: none;
 }
 .list {
   list-style: none;
+  padding: 0px;
+  margin: 0px;
 }
-.header {
-  background-color: blue;
+.header-page {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
 }
 .container {
-  max-width: 1200px;
-   margin: 0, auto;
-   padding: 0, 15px:
+  width: 1200px;
+  margin: 0px auto;
+  padding: 0px 15px;
 }
-
+.section {
+  padding-top: 94px;
+  padding-bottom: 0px;
+}
 .logo {
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
@@ -73,17 +90,11 @@ a {
 /* Заказ услуг */
 .order {
   background: var(--background-color-secondary);
-  color: var(--primary-white-color);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  padding-bottom: 600px;
 }
 .order-btn {
   background: var(--accent-color);
-
   width: 200px;
   height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -93,7 +104,17 @@ a {
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
+  margin: 0px;
 }
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
 .section-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -101,6 +122,7 @@ a {
   line-height: 1.88;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 /* наше преимущество */
@@ -110,6 +132,7 @@ a {
   font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .description {
   line-height: 24px;
@@ -136,6 +159,7 @@ a {
 /* Футер */
 .footer {
   background-color: var(--background-color-secondary);
+  margin-top: 94px;
 }
 .address {
   font-style: inherit;
@@ -160,6 +184,7 @@ a {
   background: var(--bachgroun-button-portfolio);
   border: none;
   border-radius: 4px;
+  text-align: center;
   cursor: pointer;
 }
 .navigation-btn:focus,
@@ -173,6 +198,8 @@ a {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
+  margin-top: 20px;
+  margin-bottom: 4px;
 }
 .portfolio-services {
   font-size: 16px;
