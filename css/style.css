@@ -150,19 +150,6 @@ a {
 
 /* наше преимущество------ */
 
-/* .services {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: calc(-1 * var(--section-services-gap));
-  margin-top: calc(-1 * var(--section-services-gap));
-}
-
-.services-item {
-  flex-basis: calc(100% / 3 - var(--section-services-gap));
-  margin-left: var(--section-services-gap);
-  margin-top: var(--section-services-gap);
-  outline: 1px solid black; */
-
 .section-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -179,7 +166,6 @@ a {
 
 .features-item {
   flex-basis: calc(100% / 4);
-  outline: 1px solid black;
 }
 
 .features-item:not(:last-child) {
