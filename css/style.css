@@ -1,3 +1,7 @@
+* {
+  /* box-sizing: border-box; */
+}
+
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -5,6 +9,7 @@
   --primary-white-color: #ffffff;
   --background-color-secondary: #2f303a;
   --bachgroun-button-portfolio: #f5f4fa;
+  --section-services-gap: 30px;
 }
 body {
   font-family: Roboto, sans-serif;
@@ -24,7 +29,11 @@ p {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 a {
   text-decoration: none;
 }
@@ -42,10 +51,12 @@ a {
   width: 1200px;
   margin: 0px auto;
   padding: 0px 15px;
+  outline: 3px solid red;
 }
 .section {
-  padding-top: 94px;
-  padding-bottom: 0px;
+  margin-top: 94px;
+  margin-bottom: 0px;
+  outline: 3px solid blue;
 }
 .logo {
   color: var(--accent-color);
@@ -91,7 +102,6 @@ a {
 .order {
   background: var(--background-color-secondary);
   text-align: center;
-  padding-bottom: 600px;
 }
 .order-btn {
   background: var(--accent-color);
@@ -104,8 +114,11 @@ a {
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
-  margin: 0px;
+  /* margin: 0px; */
+  margin-top: 30px;
+  margin-bottom: 200px;
 }
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -113,13 +126,14 @@ a {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
+  padding-top: 200px;
 }
 
 .section-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.88;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
@@ -127,20 +141,63 @@ a {
 
 /* наше преимущество */
 
-.features .title {
+/* .services {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--section-services-gap));
+  margin-top: calc(-1 * var(--section-services-gap));
+}
+
+.services-item {
+  flex-basis: calc(100% / 3 - var(--section-services-gap));
+  margin-left: var(--section-services-gap);
+  margin-top: var(--section-services-gap);
+  outline: 1px solid black; */
+
+.features {
+  display: flex;
+}
+
+.features-item {
+  flex-basis: calc(100% / 4);
+  outline: 1px solid black;
+}
+
+.features-item:not(:last-child) {
+  margin-right: var(--section-services-gap);
+}
+.title {
   color: var(--title-text-color);
   font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 10px;
 }
 .description {
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-top: 10px;
 }
 /* Чем мы занимаемся */
+.work {
+  display: flex;
+}
+.work-item:not(:last-child) {
+  margin-right: 30px;
+}
 
 /* Наша команда */
+.section-team {
+  margin-top: 94px;
+  margin-bottom: 0px;
+  padding: 94px 0px;
+  background: var(--bachgroun-button-portfolio);
+}
+.team-list {
+  display: flex;
+}
+.team-list > li:not(:last-child) {
+  margin-right: 30px;
+}
 .team {
   color: var(--title-text-color);
   font-weight: 500;
@@ -158,10 +215,13 @@ a {
 
 /* Футер */
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--background-color-secondary);
-  margin-top: 94px;
 }
+
 .address {
+  margin-top: 20px;
   font-style: inherit;
 }
 .address-a {
@@ -170,11 +230,23 @@ a {
   color: var(--primary-white-color);
 }
 .contacts-a {
+  display: block;
+  padding-top: 9px;
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
 }
 
 /* Portfolio */
+.container.portfolio {
+  margin-bottom: 94px;
+  margin-top: 94px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+}
 
 .navigation-btn {
   font-weight: 500;
@@ -187,22 +259,44 @@ a {
   text-align: center;
   cursor: pointer;
 }
+.navigation-space:not(:last-child) {
+  margin-right: 10px;
+}
+
 .navigation-btn:focus,
 .navigation-btn:hover {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--section-services-gap));
+  margin-top: calc(-1 * var(--section-services-gap));
+}
+
+.services-item {
+  flex-basis: calc(100% / 3 - var(--section-services-gap));
+  margin-left: var(--section-services-gap);
+  margin-top: var(--section-services-gap);
+  outline: 1px solid black;
+}
+.services-content {
+  padding: 20px 24px;
+}
+
 .title-portfolio {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
-  margin-top: 20px;
-  margin-bottom: 4px;
 }
+
 .portfolio-services {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
+  margin-top: 4px;
 }
