@@ -201,7 +201,7 @@ ul {
 .work {
   display: flex;
 }
-.work .item:not(:last-child) {
+.work-item:not(:last-child) {
   margin-right: 30px;
 }
 
